@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NaturalMind</title>
+
+    <style>
+        body {
+        margin: 0;
+        font-family: Arial;
+        background-image: url('forest.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif; 
+    }
+
+        .header {
+            background: #2f6f53;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .menu-button {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            border: 2px solid #d9eae2;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .menu-button:hover {
+            background: #dff2e7;
+            transform: scale(1.02);
+        }
+
+        .icon {
+            font-size: 30px;
+            margin-right: 15px;
+        }
+
+        h2 {
+            color: #2f6f53;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+			color: white;
+			
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        🌿 NaturalMind
+    </div>
+
+    <div class="container">
+
+        <div class="menu-button" onclick="window.location.href='terapi.html'">
+            <div class="icon">🎧</div>
+            <div>
+                <b>Terapi Suara Alam</b><br>
+                Dengarkan suara hutan, hujan, dan alam.
+            </div>
+        </div>
+
+        <div class="menu-button" onclick="window.location.href='meditasi.html'">
+            <div class="icon">🌄</div>
+            <div>
+                <b>Meditasi Virtual</b><br>
+                Meditasi di ruang hijau virtual yang menenangkan.
+            </div>
+        </div>
+
+        <div class="menu-button" onclick="window.location.href='edukasi.html'">
+            <div class="icon">📘</div>
+            <div>
+                <b>Edukasi Kesehatan Mental</b><br>
+                Materi edukasi tentang kesehatan mental dan lingkungan.
+            </div>
+        </div>
+
+        <div> <h2>Informasi Aplikasi</h2>
+        <p>
+            Pengembangan platform ini melalui beberapa tahapan strategis. Tahap awal dimulai 
+            dengan penelitian mengenai efektivitas pendekatan lingkungan dalam kesehatan mental 
+            serta analisis kebutuhan pasar.
+        </p>
+        <p>
+            Selanjutnya, aplikasi diuji coba melalui peluncuran beta kepada pengguna terbatas.
+        </p>
+        <p>
+            Platform ini termasuk kategori <b>kesehatan digital</b> dan <b>sustainability business</b>.
+        </p>
+		</div>
+    </div>
+
+</body>
+</html>
