@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Edukasi Kesehatan Mental</title>
+
+    <style>
+        body {
+            background: #fff8e8;
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            border: 2px solid #f0e2cc;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #b87a00;
+            font-weight: bold;
+            text-decoration: none;
+        }
+		#toggleTimer {
+    background: #ffe5b7;
+    border: 1px solid #e6c48b;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.timer-box.small {
+    background: #fff3d4;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1.5px solid #f0d9a3;
+    max-width: 350px;
+}
+
+#timerDisplay {
+    font-size: 28px;
+    font-weight: bold;
+    color: #b56e00;
+    margin: 10px 0;
+}
+
+.timer-buttons button {
+    padding: 6px 10px;
+    margin: 4px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #ffd27f;
+    font-weight: bold;
+}
+    </style>
+</head>
+
+<body>
+
+<a class="back" href="NaturalMind.html">← Kembali</a>
+
+<div class="content">
+    <h2>📘 Edukasi Kesehatan Mental</h2>
+
+    <p>
+        Pengembangan platform ini melalui beberapa tahapan strategis. Tahap awal dimulai dengan
+        penelitian mengenai efektivitas pendekatan lingkungan dalam kesehatan mental...
+    </p>
+
+	<h3>📖 Apa Itu Kesehatan Mental?</h3>
+<p>
+Kesehatan mental adalah kondisi kesejahteraan di mana seseorang mampu menyadari kemampuan dirinya,
+mengatasi tekanan hidup yang wajar, bekerja secara produktif, dan berkontribusi pada komunitasnya.
+Menurut <i>World Health Organization (WHO)</i>, kesehatan mental tidak hanya tentang bebas dari gangguan,
+tetapi juga bagaimana seseorang dapat berfungsi secara optimal secara emosional dan psikologis.
+</p>
+
+
+<h3>🌿 Kaitan Alam dengan Kesehatan Mental</h3>
+<p>
+Banyak penelitian psikologi modern menunjukkan bahwa paparan terhadap lingkungan alami dapat membantu:
+<ul>
+<li>Menurunkan stres dan kecemasan</li>
+<li>Meningkatkan fokus dan kejernihan berpikir</li>
+<li>Menstabilkan emosi</li>
+<li>Meningkatkan kualitas tidur</li>
+</ul>
+Pendekatan ini dikenal sebagai <b>eco-therapy</b> atau <b>nature-based healing</b>.
+</p>
+
+
+<h3>🧠 Dasar Psikologi yang Digunakan</h3>
+<p>
+Platform ini mengacu pada beberapa buku psikologi yang umum digunakan para psikolog, antara lain:
+<ul>
+<li><b>"Cognitive Behavior Therapy: Basics and Beyond"</b> – Judith S. Beck</li>
+<li><b>"The Body Keeps the Score"</b> – Bessel van der Kolk</li>
+<li><b>"Mindfulness for Beginners"</b> – Jon Kabat-Zinn</li>
+<li><b>"Positive Psychology"</b> – Seligman & Csikszentmihalyi</li>
+</ul>
+Buku-buku tersebut menjadi referensi utama dalam membangun modul edukasi, mindfulness,
+dan regulasi emosi pada platform ini.
+</p>
+
+
+<h3>💬 Tips Merawat Kesehatan Mental Sehari-hari</h3>
+<ul>
+<li>Luangkan 5–10 menit sehari untuk mindfulness</li>
+<li>Atur pola tidur yang cukup</li>
+<li>Kurangi konsumsi informasi berlebih</li>
+<li>Tulis jurnal emosi</li>
+<li>Cari dukungan dari orang terpercaya</li>
+</ul>
+
+<div class="card">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+<div>
+<strong>Ringkasan:</strong> 5 modul: Stres, Overthinking, Kecemasan, Mindfulness, Self-Compassion. Tiap modul berisi definisi, tanda, dan latihan praktis.
+</div>
+<div class="tools">
+<button class="btn" id="expandAll">Buka Semua</button>
+<button class="btn ghost" id="collapseAll">Tutup Semua</button>
+</div>
+</div>
+
+
+<div class="modules" style="margin-top:16px">
+
+<section class="accordion">
+<button style="margin-bottom: 12px;" class="acc-btn" aria-expanded="false">
+<h3>1. Apa Itu Stres?</h3>
+<span class="small">Definisi • Tanda-tanda • Cara mencegah</span>
+</button>
+<div class="acc-body" style="display:none;">
+<p><strong>Definisi:</strong> Stres adalah respons alami tubuh terhadap tuntutan atau tekanan. Stres singkat normal; stres berkepanjangan bisa berdampak negatif.</p>
+<p><strong>Tanda-tanda:</strong> tegang, sulit tidur, cepat marah, otot tegang, pikiran berulang.</p>
+<p><strong>Latihan singkat (Pernapasan 4-2-6):</strong> Tarik napas 4 detik → tahan 2 detik → hembus 6 detik. Ulangi 5 kali.</p>
+<p class="small">Praktik singkat ini dapat dimasukkan sebagai audio/animasi untuk pengalaman pengguna yang lebih kaya.</p>
+</div>
+</section>
+
+<section class="accordion">
+<button style="margin-bottom: 12px;" class="acc-btn" aria-expanded="false">
+<h3>2. Mengatasi Overthinking</h3>
+<span class="small">Faktor Penyebab • Teknik meredakan</span>
+</button>
+<div class="acc-body">
+<p><strong>Faktor Penyebab:</strong> pola kebiasaan khawatir, perfeksionisme, atau kurang istirahat mental.</p>
+<p><strong>Teknik meredakan:</strong></p>
+<ul>
+<li><strong>Thought Record:</strong> catat situasi → pikiran otomatis → bukti pendukung/penyangkal → pikiran alternatif.</li>
+<li><strong>5-4-3-2-1 Grounding:</strong> sebut 5 hal yang terlihat, 4 yang bisa dirasakan, 3 yang terdengar, 2 yang bisa dicium, 1 yang bisa disentuh.</li>
+<li><strong>Stop Technique:</strong> ucapkan "stop" lalu arahkan perhatian ke napas.</li>
+</ul>
+<p class="small">Sertakan template thought-record yang bisa diisi di aplikasi untuk interaktivitas.</p>
+</div>
+</section>
+
+<section class="accordion">
+<button style="margin-bottom: 12px;" class="acc-btn" aria-expanded="false">
+<h3>3. Kecemasan (Anxiety)</h3>
+<span class="small">Gejala • Teknik meredakan</span>
+</button>
+<div class="acc-body">
+<p><strong>Gejala umum:</strong> jantung berdebar, napas cepat, keringat, kesulitan fokus.</p>
+<p><strong>Teknik meredakan:</strong></p>
+<ol>
+<li><strong>Pernapasan diafragma</strong> (tarik 4 — tahan 2 — buang 6).</li>
+<li><strong>Progressive Muscle Relaxation</strong> (tegang-lepas setiap kelompok otot selama 10–12 menit).</li>
+<li><strong>Self-talk realistis:</strong> ganti "Aku nggak bisa" menjadi "Aku cemas, tapi aku bisa mencoba langkah kecil".</li>
+</ol>
+<p class="small">Bisa ditambahkan panduan audio PMR berdurasi singkat.</p>
+</div>
+
+<section class="accordion">
+<button style="margin-bottom: 12px;" class="acc-btn" aria-expanded="false">
+<h3>4. Mindfulness untuk Pemula</h3>
+<span class="small">Definisi • Latihan 1 menit</span>
+</button>
+<div class="acc-body">
+<p><strong>Apa itu:</strong> hadir di saat ini tanpa menghakimi.</p>
+<p><strong>Latihan 1 menit:</strong> duduk tenang, fokus napas, amati naik-turun dada, jika pikiran lari arahkan kembali dengan lembut. Ulangi 1 menit tiap hari.</p>
+</div>
+<button id="toggleTimer">▶ Latihan 1 Menit (Tampilkan/Hide)</button>
+<div id="timerSection" style="display:none; margin-top:12px;">
+    <div class="timer-box small">
+        <h4 style="margin-bottom:8px;">⏱ Timer 1 Menit Mindfulness</h4>
+        <div id="timerDisplay">01:00</div>
+    <div class="timer-buttons">
+        <button id="startTimer">Start</button>
+        <button id="pauseTimer">Pause</button>
+        <button id="resetTimer">Reset</button>
+    </div>
+</div>
+</section>
+
+
+
+<section class="accordion">
+<button style="margin-bottom: 12px;" class="acc-btn" aria-expanded="false">
+<h3>5. Self-Compassion</h3>
+<span class="small">Kebaikan pada diri • Latihan singkat</span>
+</button>
+<div class="acc-body">
+<p><strong>Komponen:</strong> self-kindness, common humanity, mindfulness.</p>
+<p><strong>Latihan:</strong> Ucapkan pada diri: "Aku sedang berjuang. Tidak apa-apa merasa seperti ini. Aku tetap berharga." Ulangi 1–2 menit saat merasa down.</p>
+<p class="small">Tampilkan kartu afirmasi yang bisa disimpan atau dibagikan.</p>
+</div>
+</section>
+
+
+</div>
+
+
+<div style="margin-top:16px">
+<h4 style="margin:0 0 8px">Saran Buku Berbau Psikologi</h4>
+<div class="refs card">
+<ol>
+<li>James Clear — <em>Atomic Habits</em></li>
+<li>Daniel Kahneman — <em>Thinking, Fast and Slow</em></li>
+<li>Henry Manampiring — <em>Filosofi Teras</em></li>
+<li>Morgan Housel — <em>The Psychology of Money</em></li>
+<li>Mark Manson — <em>Seni untuk Bersikap Bodo Amat</em></li>
+</ol>
+</div>
+</div>
+
+
+</div>
+
+
+<script>
+// Accordion logic
+document.querySelectorAll('.accordion').forEach(acc => {
+const btn = acc.querySelector('.acc-btn');
+const body = acc.querySelector('.acc-body');
+btn.addEventListener('click', ()=>{
+const open = btn.getAttribute('aria-expanded') === 'true';
+btn.setAttribute('aria-expanded', String(!open));
+body.style.display = open ? 'none' : 'block';
+});
+});
+document.getElementById('expandAll').addEventListener('click', ()=>{
+document.querySelectorAll('.accordion .acc-btn').forEach(btn=>{btn.setAttribute('aria-expanded','true'); btn.nextElementSibling.style.display='block'});
+});
+document.getElementById('collapseAll').addEventListener('click', ()=>{
+document.querySelectorAll('.accordion .acc-btn').forEach(btn=>{btn.setAttribute('aria-expanded','false'); btn.nextElementSibling.style.display='none'});
+});
+
+
+// Exports (simple demo behaviour)
+document.getElementById('exportCards').addEventListener('click', ()=>{
+alert('Versi card ringkas telah dibuat (contoh). Minta aku untuk mengekspor HTML/CSS card jika mau file nyata.');
+});
+document.getElementById('exportDetail').addEventListener('click', ()=>{
+alert('Versi detail harian telah dibuat (contoh). Minta detail harian 7 hari untuk diekspor.');
+});
+</script>
+<script>
+document.getElementById("toggleTimer").addEventListener("click", () => {
+    const box = document.getElementById("timerSection");
+    box.style.display = box.style.display === "none" ? "block" : "none";
+});
+let timer;
+let timeLeft = 60; // 1 menit = 60 detik
+let isRunning = false;
+
+const display = document.getElementById("timerDisplay");
+
+function updateDisplay() {
+    let minutes = Math.floor(timeLeft / 60);
+    let seconds = timeLeft % 60;
+    display.textContent =
+        (minutes < 10 ? "0" : "") + minutes + ":" +
+        (seconds < 10 ? "0" : "") + seconds;
+}
+
+document.getElementById("startTimer").addEventListener("click", function () {
+    if (isRunning) return;
+    isRunning = true;
+
+    timer = setInterval(() => {
+        if (timeLeft > 0) {
+            timeLeft--;
+            updateDisplay();
+        } else {
+            clearInterval(timer);
+            isRunning = false;
+            alert("Waktu selesai! ✨");
+        }
+    }, 1000);
+});
+
+document.getElementById("pauseTimer").addEventListener("click", function () {
+    clearInterval(timer);
+    isRunning = false;
+});
+
+document.getElementById("resetTimer").addEventListener("click", function () {
+    clearInterval(timer);
+    isRunning = false;
+    timeLeft = 60;
+    updateDisplay();
+});
+
+// set display awal
+updateDisplay();
+</script>
+</body>
+</html>
